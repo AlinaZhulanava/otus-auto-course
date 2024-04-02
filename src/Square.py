@@ -8,7 +8,3 @@ class Square(Rectangle):
     def get_area(self):
         self.area = self.side_a ** 2
         return self.area
-
-    def get_perimeter(self):
-        self.perimeter = self.side_a * 4
-        return self.perimeter

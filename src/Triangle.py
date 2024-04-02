@@ -12,7 +12,7 @@ class Triangle(Figure):
             self.side_b = side_b
             self.side_c = side_c
         else:
-            raise ValueError
+            raise ValueError("Can't create a triangle with such sides")
 
     def get_area(self):
         p = self.get_perimeter() / 2
