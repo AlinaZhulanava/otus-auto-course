@@ -2,7 +2,7 @@ import json
 
 
 def read_users(file_users):
-    users = json.loads(file_users.read_file())  # returns a list of objects
+    users = json.loads(file_users.read())  # returns a list of objects
     filtered_users = []
     for user in users:
         user_dict = {"name": user["name"], "gender": user["gender"], "address": user["address"], "age": user["age"],
@@ -12,4 +12,4 @@ def read_users(file_users):
 
 def write_users(file_result, users_with_books):
     piece_of_json = json.dumps(users_with_books)
-    file_result.write_file(piece_of_json)
+    file_result.write(piece_of_json)
