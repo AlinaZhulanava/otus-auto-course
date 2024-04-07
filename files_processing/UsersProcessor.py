@@ -9,3 +9,7 @@ def read_users(file_users):
                      "books": []}
         filtered_users.append(user_dict)
     return filtered_users
+
+def write_users(file_result, users_with_books):
+    piece_of_json = json.dumps(users_with_books)
+    file_result.write_file(piece_of_json)
